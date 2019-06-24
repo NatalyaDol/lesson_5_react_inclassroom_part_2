@@ -7,7 +7,7 @@ import MenuItem from '../components/MenuItem';
 export default class Layout extends Component {
   constructor(props) {
     super(props);
-    this.brand = 'React blog!';
+    this.brand = 'Logo React blog!';
   } 
 
   isActive(href) {
@@ -23,6 +23,9 @@ export default class Layout extends Component {
           </MenuItem>
           <MenuItem href="/users" active={ this.isActive("/users") }>
             Пользователи
+          </MenuItem>
+          <MenuItem href="/posts" active={ this.isActive("/posts") }>
+            Посты
           </MenuItem>
         </Menu>
         <div className="container">

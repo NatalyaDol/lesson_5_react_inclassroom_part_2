@@ -7,7 +7,7 @@ export default class Post extends Component {
       <div className="card border-secondary mb-3">
         <div className="card-header">
         <Link to={`/posts/${this.props.id}`}>
-          {this.props.userId}
+          {this.props.postId}
         </Link>
         </div>
         <div className="card-body text-secondary">

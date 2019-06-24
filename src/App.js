@@ -9,6 +9,7 @@ import Users from './app/pages/Users';
 import PageNotFound from './app/pages/PageNotFound';
 import User from './app/pages/User';
 import Posts from './app/pages/Posts';
+import Post from './app/pages/Post';
 
 //это машрутизатор
 ReactDOM.render(<Router history={browserHistory}>
@@ -19,7 +20,7 @@ ReactDOM.render(<Router history={browserHistory}>
       </Route>
 
       <Route path="posts" component={Posts}>
-        <Route path=":userId" component={Posts}/>
+        <Route path=":postId" component={Post}/>
       </Route>
     <Route path="*" component={PageNotFound}/>
   </Route>
