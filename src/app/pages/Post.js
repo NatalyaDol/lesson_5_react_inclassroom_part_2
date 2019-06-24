@@ -19,7 +19,7 @@ export default class Post extends Component {
   }
 
   componentDidMount() {
-    axios.get(`http://jsonplaceholder.typicode.com/posts/${this.props.params.userId}`)
+    axios.get(`http://jsonplaceholder.typicode.com/posts/${this.props.params.postId}`)
     .then(response => {
       this.setState({ post: response.data })
     })
